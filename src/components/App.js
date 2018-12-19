@@ -6,6 +6,7 @@ import '../css/App.css';
 import PostsList from './postslist';
 import PostCreate from './postcreate';
 import PostOne from './postone';  
+import Header from './header';
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Route exact path='/' component={PostsList} />
-          <Route exact path='/postcreate' component={PostCreate} />
+          <Route exact path='/create' component={PostCreate} />
           <Route path='/posts/:id' component={PostOne} />
         </div>
       </BrowserRouter>
